@@ -13,7 +13,8 @@ import typescriptIcon from '../../Assets/icon/typescript-icon.svg';
 import vscodeIcon from '../../Assets/icon/vscode-icon.svg';
 import vueIcon from '../../Assets/icon/vue-icon.svg';
 
-const ParticleComponent = () => {
+const ParticleComponent = React.memo(() => {
+  console.log("render")
   const particlesOptions = {
     "fullScreen": {
       "enable": true,
@@ -115,7 +116,7 @@ const ParticleComponent = () => {
       "opacity": {
         "animation": {
           "enable": true,
-          "minimumValue": 0.2,
+          "minimumValue": 0.1,
           "speed": 1,
           "sync": false
         },
@@ -239,6 +240,6 @@ const ParticleComponent = () => {
   }
  
   return <Particles id='tsparticles' options={particlesOptions} />;
-};
+});
 
 export default ParticleComponent;
