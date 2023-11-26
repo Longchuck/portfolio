@@ -3,10 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homeCoder.png";
 import Particle from "../Particle";
 import Type from "./Type";
+import ParticleComponent from "./HomeParticles";
 
 function Home() {
   return (
     <section>
+      <ParticleComponent />
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">

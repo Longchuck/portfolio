@@ -6,6 +6,7 @@ import pdf from "../../Assets/Long_24_11_2023.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import ParticleComponent from "../Home/HomeParticles";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -18,6 +19,7 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
+        <ParticleComponent />
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

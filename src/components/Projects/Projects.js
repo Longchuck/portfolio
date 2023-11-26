@@ -5,10 +5,12 @@ import Particle from "../Particle";
 import moviePrj from "../../Assets/Projects/moviePrj.png";
 import cameraDb from "../../Assets/Projects/cameraDb.png";
 import smartCM from "../../Assets/Projects/smartCM.png";
+import ParticleComponent from "../Home/HomeParticles";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
+      <ParticleComponent />
       <Particle />
       <Container>
         <h1 className="project-heading">
